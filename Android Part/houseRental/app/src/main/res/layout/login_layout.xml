@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_user"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/rent_02"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp" />
+
+    <EditText
+        android:id="@+id/et_email"
+        android:hint="Email"
+        android:drawableLeft="@drawable/ic_person"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/iv_user"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorAccent"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:hint="password"
+        android:drawableLeft="@drawable/ic_action_name"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/et_email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@color/colorAccent"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btn_button"
+        android:textColor="#ffffff"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/et_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button_rectangle"
+        android:textSize="20dp"
+        android:text="LOGIN" />
+
+    <TextView
+        android:id="@+id/tv_RegisterMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="#ffffff"
+        android:textSize="15dp"
+        android:text="No account yet? Create one" />
+
+</RelativeLayout>

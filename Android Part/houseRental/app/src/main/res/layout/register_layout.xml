@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_user"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@drawable/rent" />
+
+    <EditText
+        android:id="@+id/et_name"
+
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+
+        android:layout_below="@id/iv_user"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:autofillHints="Name"
+        android:drawableLeft="@drawable/ic_person"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_user"
+        android:layout_alignStart="@id/et_name"
+        android:layout_alignLeft="@id/et_name"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="19dp"
+        android:text="Name"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+
+    <EditText
+        android:id="@+id/et_reg_email"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/et_name"
+        android:drawableLeft="@drawable/ic_email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/tv_reg_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_name"
+        android:layout_alignStart="@id/et_name"
+        android:layout_alignLeft="@id/et_name"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="19dp"
+        android:text="Email"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        />
+
+    <EditText
+        android:id="@+id/ev_reg_password"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/et_reg_email"
+        android:drawableLeft="@drawable/ic_action_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/tv_reg_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_reg_email"
+        android:layout_alignStart="@id/et_name"
+        android:layout_alignLeft="@id/et_name"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="19dp"
+        android:text="Password"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        />
+
+    <EditText
+        android:id="@+id/ev_phone"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/ev_reg_password"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/ic_phone"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:inputType="textPhonetic"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/tv_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ev_reg_password"
+        android:layout_alignStart="@id/et_name"
+        android:layout_alignLeft="@id/et_name"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="19dp"
+        android:text="Phone Number"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        />
+
+
+    <CheckBox
+        android:id="@+id/et_tenant"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/ev_phone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Tenant" />
+
+    <CheckBox
+        android:id="@+id/et_landlord"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/et_tenant"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Owners" />
+
+    <Button
+    android:id="@+id/et_button"
+    android:background="@drawable/button_rectangle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/et_landlord"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="10dp"
+    android:text="Submit" />
+
+
+
+
+</RelativeLayout>

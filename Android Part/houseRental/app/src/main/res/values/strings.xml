@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">houseRental</string>
+    <string name="user_type">Choose User Type</string>
+
+    <string-array name="user_type">
+        <item>admin</item>
+        <item>tenant</item>
+        <item>landlord</item>
+    </string-array>
+
+</resources>
